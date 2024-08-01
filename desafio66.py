@@ -1,6 +1,7 @@
 
 s = cont = 0
 while True:
+
     n = int(input('Digite um numero(Digite 999 para encerrar):'))
     if n ==999:
         break
