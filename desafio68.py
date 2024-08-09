@@ -1,5 +1,5 @@
 import random
-n = random.randint(1,100)
+
 
 print('=='*13)
 print('|JOGO DO PAR OU IMPAR|')
@@ -9,9 +9,12 @@ v ='Ganhou'
 d = True
 cont = 0
 while d :
-    n = random.randint(1,10)
-    resposta = n%2
+    pc = random.randint(1,100)
+    numero = int(input('Digite um numero :'))
     escolha = str(input('Faça sua jogada| PAR ou IMPAR :')).upper()
+    n = pc + numero
+    resposta = n % 2
+    print(f'O numero que o computador jogou foi {pc}')
     if resposta == 1 and escolha =='PAR':
         print('Você perdeu')
         d = False
